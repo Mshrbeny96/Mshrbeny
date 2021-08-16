@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid 19 Tracker </title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+
+    <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.74.0/dist/L.Control.Locate.min.css" />
+
+<script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.74.0/dist/L.Control.Locate.min.js" charset="utf-8"></script>
+
+<script src="./Fuse-master/Fuse-master/dist/fuse.js" charset="utf-8"></script>
+
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="head">
+        <div id="list">
+            <h2>
+                World Confrimed Cases by Mohamed Mustafa
+            </h2>
+        </div>
+
+    </header>
+
+
+    <div class="App">
+
+
+        <div class="App_left">
+
+            <div id="table" >
+            
+            </div>
+
+            <div id="pie">
+                <canvas id="canvas" >
+                    
+                </canvas>
+            </div>
+
+
+        </div>
+
+
+        <div class="App_right">
+
+            <div id="mapid" >
+
+            </div>
+
+            <div class="mincontainer">
+
+
+            
+
+                <div class="rec"> Cases 
+                    <br>
+                    <pr id="casnum">  </pr> 
+                 </div>
+    
+                 <div class="rec"> Recovered 
+                    <br>
+                    <pr id="recnum">  </pr> 
+                 </div>
+        
+                <div class="dea"> Deaths 
+                    <br>
+                  <pr id="deanum">  </pr> 
+        
+                </div>
+    
+             </div>
+
+
+
+
+             <div id="bar">
+                 <canvas id="canvas2">
+
+                 </canvas>
+             </div>
+    
+
+        </div>
+
+
+    </div>
+
+
+ 
+       
+
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@3.4.1/dist/chart.min.js">
+
+</script>
+    <script src="script.js"></script>
+
+    
+</body>
+</html>
+
+<table>
+    <tr onClick="myFunction" onclick="func">
+
+    </tr>
+</table>
